@@ -1,0 +1,12 @@
+{
+  "name": "Build Hook",
+  "version": "1.0.0",
+  "description": "Triggers on CDK synth",
+  "when": {
+    "type": "userTriggered"
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "npm run cdk synth"
+  }
+}

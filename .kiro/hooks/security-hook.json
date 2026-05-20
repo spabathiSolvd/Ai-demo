@@ -1,0 +1,13 @@
+{
+  "name": "Security Hook",
+  "version": "1.0.0",
+  "description": "Triggers on IAM changes",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["lib/foundation/security/**"]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Review security changes for compliance"
+  }
+}

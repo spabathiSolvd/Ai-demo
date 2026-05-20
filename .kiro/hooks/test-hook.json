@@ -1,0 +1,13 @@
+{
+  "name": "Test Hook",
+  "version": "1.0.0",
+  "description": "Triggers on test run",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["**/*.test.ts", "**/*.spec.ts"]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "npm test"
+  }
+}
