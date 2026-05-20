@@ -2,12 +2,15 @@
   "name": "migration-kiro",
   "version": "1.0.0",
   "description": "Shared dependencies for migration project",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "build": "tsc",
     "cdk": "cdk"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
+    "@types/node": "^22.0.0",
     "typescript": "^5.0.0",
     "aws-cdk": "^2.0.0"
   },
